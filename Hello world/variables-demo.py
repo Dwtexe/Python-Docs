@@ -1,12 +1,4 @@
-
-
-
-
-# projede hatalar var düzeltilmesi gerek!!!!!!!!!!
-
-
-
-
+#Değişkenler hakkında bir ödev çalışması
 """
     1- Bir müşterinin ağağıdaki bilgileri için değişken oluşturunuz.
 
