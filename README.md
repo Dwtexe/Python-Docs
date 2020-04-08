@@ -1,2 +1,2 @@
 # Python-Docs
-Python öğrenirken oluşturduğum dosyalar
+Python öğrenirken oluşturduğum dosyalar.
