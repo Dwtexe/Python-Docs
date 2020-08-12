@@ -1,5 +1,6 @@
 """
 beynim yandı bir ara bakıcam sana güzellik.
+kafa kalmadı lan :((
 """
 
 import random
@@ -26,25 +27,26 @@ def vur(vuran:dict,vurulan:dict):
     eksilen = vuran["güç"]
     vurulan["can"] = vurulan["can"] - eksilen
 
-while karakter1["can"] >0 and karakter2["can"] >0:
+while True:
     vur(karakter1,karakter2)
-    print(f"İlk vurma üstünlüğüne sahip olan kişi "{user1}" oldu")
+    if karakter1["can"] <=0:
+        print(f"{user1} Tebrikler oyunu sen kazandın...")
+        time.sleep(2)
+        print("Yine bekleriz.")
+        break
+    elif karakter2["can"] <=0:
+        print(f"{user2} Tebrikler oyunu sen kazandın...")
+        time.sleep(2)
+        print("Yine bekleriz.")
+        break
+    else :
+        continue
+    print(f"İlk vurma üstünlüğüne sahip olan kişi {user1} oldu")
     print("Veeee")
     time.sleep(5)
-    print(f{guc1}"gücünde bir saldırı yaptı")
-    print(f{user2}"Sıra sende bileğine kuvvet")
+    print(f"{guc1} gücünde bir saldırı yaptı")
+    print(f"{user2} Sıra sende bileğine kuvvet")
     vur(karakter2,karakter1)
     print("Veeee")
     time.sleep(5)
-    print(f{guc2}"gücünde bir saldırı yaptı")
-
-if karakter1["can"] <=0:
-    print(f{user1} "Tebrikler oyunu sen kazandın...")
-    time.sleep(2)
-    print("Yine bekleriz.")
-    break()
-else karakter2["can"] <=0:
-    print(f{user2} "Tebrikler oyunu sen kazandın...")
-    time.sleep(2)
-    print("Yine bekleriz.")
-    break()
+    print(f"{guc2} gücünde bir saldırı yaptı")
