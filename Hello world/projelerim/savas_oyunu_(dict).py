@@ -33,12 +33,12 @@ while True:
         print(f"{user1} Tebrikler oyunu sen kazandın...")
         time.sleep(2)
         print("Yine bekleriz.")
-        break
+        quit()
     elif karakter2["can"] <=0:
         print(f"{user2} Tebrikler oyunu sen kazandın...")
         time.sleep(2)
         print("Yine bekleriz.")
-        break
+        quit()
     else :
         continue
     print(f"İlk vurma üstünlüğüne sahip olan kişi {user1} oldu")
