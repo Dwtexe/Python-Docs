@@ -2,7 +2,7 @@
 beynim yandı bir ara bakıcam sana güzellik.
 kafa kalmadı lan :((
 """
-
+import os
 import random
 import time
 guc1 = random.randint(0,100)
@@ -10,10 +10,10 @@ guc2 = random.randint(0,100)
 
 user1 = input("1. Oyuncunun  adı : ")
 user2 = input("2. Oyuncunun  adı : ")
-
+os.system("clear")
 weapon1 = input("1. Oyuncunun silahı : ")
 weapon2 = input("2. Oyuncunun silahı : ")
-
+os.system("clear")
 karakter1 = {"ad" : user1,
             "güç" : guc1,
             "silah" : weapon1,
@@ -45,6 +45,7 @@ while True:
     print("Veeee")
     time.sleep(5)
     print(f"{guc1} gücünde bir saldırı yaptı")
+    os.system("clear")
     print(f"{user2} Sıra sende bileğine kuvvet")
     vur(karakter2,karakter1)
     print("Veeee")
