@@ -44,4 +44,5 @@ while True:
     
     else:
         print("Hatalı Yazım!!")
-        input("Ana menüye dönmek için 'enter'a basınız.")
+        print("Ana menüye dönmek için 'enter'a basınız.")
+        input()
