@@ -34,7 +34,7 @@ def hesapKontrol(dosya_adi):
 
     except FileNotFoundError:
         dosya = open(dosya_adi,"w")
-        dosya.close
+        dosya.close()
         print("İlk defa program çalıştırıldığı için kayıt dosyası oluşturuldu.")
         flag = False
 
