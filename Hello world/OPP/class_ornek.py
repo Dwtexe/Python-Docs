@@ -46,7 +46,7 @@ while True:
     for i in dusmanlar:
         print(f"{dusmanlar.index(i)}. Düşman ---> |Sağlık: {i.saglik} |Güç: {i.güç} |Kalkan: {i.kalkan}")
     
-    secim = int(input("Düşman Seçiniz: "))
+    secim == int(input("Düşman Seçiniz: "))
     dusman = dusmanlar[secim]
     player.vur(dusman)
     if dusmanlar:
