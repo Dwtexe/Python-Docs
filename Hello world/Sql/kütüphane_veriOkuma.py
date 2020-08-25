@@ -29,8 +29,18 @@ CREATE TABLE IF NOT EXISTS kategoriler(
 )
 """)
 
-pen.execute("""
-INSERT INTO calisanlar(calisan_adi,calisan_maas) VALUES ("Anastacio Cruickshank",4500)
-""")
+calisanlar = pen.execute("SELECT * FROM calisanlar")
+for calisanlar in calisanlar.fetchall():
+    print("Çalışan Numarası : %s || Çalışan İsimi : %s || Çalışan Maaşı : %s" %calisanlar)
+print("--"*40) 
+# Maaşı 2000 olanları yazdırmak için
+calisanlar = pen.execute("SELECT * FROM calisanlar WHERE calisan_maas=2000")
+for calisanlar in calisanlar.fetchall():
+    print("Çalışan Numarası : %s || Çalışan İsimi : %s || Çalışan Maaşı : %s" %calisanlar)
+
+print("--"*40)
+calisan = pen.execute("SELECT * FROM calisanlar ORDER BY calisan_adi LIMIT 2")
+for i in calisan:
+    print(i[1])
 baglanti.commit()
 baglanti.close()

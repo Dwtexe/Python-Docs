@@ -29,8 +29,10 @@ CREATE TABLE IF NOT EXISTS kategoriler(
 )
 """)
 
-pen.execute("""
-INSERT INTO calisanlar(calisan_adi,calisan_maas) VALUES ("Anastacio Cruickshank",4500)
-""")
+pen.execute("INSERT INTO kitaplar(kitap_adi,kitap_kategori) VALUES ('deneme kitabı',3)")
+#Şimdi bu kitabı değiştirelim
+
+pen.execute("UPDATE kitaplar SET kitap_adi='Değiştirilmiş Karbon' WHERE kitap_adi='deneme kitabı'")
+
 baglanti.commit()
 baglanti.close()
