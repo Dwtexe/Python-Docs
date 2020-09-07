@@ -1,0 +1,4 @@
+ilkkez=False
+lisans=Trial
+isim=
+serial=12345
